@@ -1,4 +1,3 @@
-// JavaScript code for toggling icon state
 const questions = document.querySelectorAll('.accordion-box h2');
 
 questions.forEach(question => {
@@ -20,6 +19,23 @@ questions.forEach(question => {
       icon.setAttribute('src', minusIcon);
     } else {
       icon.setAttribute('src', plusIcon);
+    }
+  });
+
+  // Add keyboard event listeners
+  question.addEventListener('keydown', function(event) {
+    const arrowKeys = ['ArrowUp', 'ArrowDown', 'Enter'];
+    const currentIndex = Array.from(questions).indexOf(question);
+
+    if (arrowKeys.includes(event.key)) {
+      event.preventDefault();
+      if (event.key === 'ArrowDown' && currentIndex < questions.length - 1) {
+        questions[currentIndex + 1].focus();
+      } else if (event.key === 'ArrowUp' && currentIndex > 0) {
+        questions[currentIndex - 1].focus();
+      } else if (event.key === 'Enter') {
+        question.click();
+      }
     }
   });
 });
