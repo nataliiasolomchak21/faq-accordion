@@ -1,32 +1,35 @@
-const questions = document.querySelectorAll('.accordion-box h2');
-
-questions.forEach(question => {
-  question.addEventListener('click', function() {
+document.addEventListener('click', function(event) {
+    const question = event.target.closest('.accordion-box h2');
+    if (!question) return;
+  
     const icon = question.querySelector('.question');
     const answer = question.nextElementSibling;
-
+  
     // Toggle active class on icon
     icon.classList.toggle('active');
-
+  
     // Toggle answer visibility
     answer.classList.toggle('active');
-
+  
     // Toggle plus and minus icons
     const plusIcon = 'assets/images/icon-plus.svg';
     const minusIcon = 'assets/images/icon-minus.svg';
-
+  
     if (icon.getAttribute('src') === plusIcon) {
       icon.setAttribute('src', minusIcon);
     } else {
       icon.setAttribute('src', plusIcon);
     }
   });
-
-  // Add keyboard event listeners
-  question.addEventListener('keydown', function(event) {
+  
+  document.addEventListener('keydown', function(event) {
     const arrowKeys = ['ArrowUp', 'ArrowDown', 'Enter'];
-    const currentIndex = Array.from(questions).indexOf(question);
-
+    const question = event.target.closest('.accordion-box h2');
+    if (!question) return;
+  
+    const questions = Array.from(document.querySelectorAll('.accordion-box h2'));
+    const currentIndex = questions.indexOf(question);
+  
     if (arrowKeys.includes(event.key)) {
       event.preventDefault();
       if (event.key === 'ArrowDown' && currentIndex < questions.length - 1) {
@@ -38,4 +41,4 @@ questions.forEach(question => {
       }
     }
   });
-});
+  
