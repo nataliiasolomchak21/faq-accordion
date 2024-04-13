@@ -10,11 +10,6 @@ This is my solution to the [FAQ accordion challenge on Frontend Mentor](https://
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -36,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/nataliiasolomchak21/faq-accordion](https://github.com/nataliiasolomchak21/faq-accordion)
+- Live Site URL: [https://nataliiasolomchak21.github.io/faq-accordion/](https://nataliiasolomchak21.github.io/faq-accordion/)
 
 ## My process
 
