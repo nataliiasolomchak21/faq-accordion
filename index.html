@@ -2,47 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ accordion</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>FAQ</title>
 </head>
 <body>
-
-  FAQs
-
-  What is Frontend Mentor, and how will it help me?
-
-  Frontend Mentor offers realistic coding challenges to help developers improve their 
-  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-  all levels and ideal for portfolio building.
-
-  Is Frontend Mentor free?
-
-  Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-  option providing access to a range of projects suitable for all skill levels.
-
-  Can I use Frontend Mentor projects in my portfolio?
-
-  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-  way to showcase your skills to potential employers!
-
-  How can I get help if I'm stuck on a Frontend Mentor challenge?
-  
-  The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-  channel where you can ask questions and seek support from other community members.
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="accordion">
+    <h1><img src="assets/images/icon-star.svg" alt="star" width="30" height="30"> FAQs</h1>
+    <div class="accordion-box">
+      <h2><span>What is cloud computing?</span>
+        <img class="question"  src="assets/images/icon-plus.svg" alt=""></h2>
+      <p class="answer">Cloud computing refers to the delivery of computing services—including servers, storage, databases, networking, software, and more—over the internet (the cloud) on a pay-as-you-go basis. It offers flexibility, scalability, and cost-effectiveness compared to traditional on-premises infrastructure.</p>
+      <hr>
   </div>
+  
+  <div class="accordion-box">
+      <h2><span>How does cloud computing enhance collaboration?</span> <img class="question" src="assets/images/icon-plus.svg" alt="plus"></h2>
+      <p class="answer">Cloud computing allows teams to access and collaborate on documents, files, and projects from anywhere with an internet connection. This promotes real-time collaboration, version control, and seamless communication among team members, regardless of their location.</p>
+      <hr>
+  </div>
+  
+  <div class="accordion-box">
+      <h2><span>Key benefits of cloud storage services?</span> <img class="question" src="assets/images/icon-plus.svg" alt=""></h2>
+      <p class="answer">Cloud storage services offer several advantages, including unlimited scalability, data redundancy, and accessibility from any device. Users can store, retrieve, and share files securely without the need for physical storage devices, reducing the risk of data loss and simplifying data management.</p>
+      <hr>
+  </div>
+  
+  <div class="accordion-box">
+      <h2><span>How does cloud computing improve disaster recovery?</span> <img class="question" src="assets/images/icon-plus.svg" alt=""></h2>
+      <p class="answer">Cloud computing provides robust disaster recovery solutions by replicating data across multiple geographic locations and ensuring high availability of services. In the event of a disaster or system failure, organizations can quickly restore operations and minimize downtime by accessing backup data stored in the cloud.</p>
+  </div>
+  
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
